@@ -71,7 +71,7 @@ int main() {
 	cout << "Keliling bujursangkar: " << bd->keliling(bd->getX()) << endl;
 
 	return 0;
-
+	 
 };
 
 
