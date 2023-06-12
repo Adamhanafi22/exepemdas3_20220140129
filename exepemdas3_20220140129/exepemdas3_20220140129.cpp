@@ -22,13 +22,12 @@ public:
 	}
 };
 class lingkaran :public bidangDatar {/*lengkapi disini*/
-private:
-	int jari_jari;
 public:
 	void input() {
-		cout << "Memasukan jejari" << endl;
-		cin >> jari_jari;
-		setX(jari_jari);
+		cout << "Memasukan jejari: ";
+		int r;
+		cin >> r;
+		setX(r);	
 	}
 	float luas(int r) {
 		
@@ -40,13 +39,12 @@ public:
 	}
 };
 class Bujursangkar :public bidangDatar {
-private:
-	int sisi;
 public:
 	void input() {
-		cout << "Masukkan sisi bujursangkar: ";
-		cin >> sisi;
-		setX(sisi);
+		cout << "Masukkan sisi: ";
+		int s;
+		cin >> s;
+		setX(s);
 	}
 	float Luas(int sisi) {
 		return sisi * sisi;
@@ -63,7 +61,7 @@ int main() {
 	Bujursangkar bujursangkar;
 
 	*bd = lingkaran;
-	bd->input();	
+	bd->input();
 	cout << "luas lingkaran:" << bd->luas(bd->getX()) << endl;
 	cout << "Keliling lingkaran: " << bd->keliling(bd->getX()) << endl;
 
@@ -73,7 +71,8 @@ int main() {
 	cout << "Keliling bujursangkar: " << bd->keliling(bd->getX()) << endl;
 
 	return 0;
-}
+
+};
 
 
 
